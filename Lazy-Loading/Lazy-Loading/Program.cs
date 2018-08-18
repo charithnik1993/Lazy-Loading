@@ -8,7 +8,7 @@ namespace Lazy_Loading
 {
     class Program
     {
-
+		//modified by charith ranasinghe
         public class Employee
         {
            
