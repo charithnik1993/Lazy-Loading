@@ -53,13 +53,19 @@ namespace Lazy_Loading
         static void Main(string[] args)
         {
 
-            Employee obj = new Employee(1,"Charith");
+            //Employee obj = new Employee(1,"Charith");
 
-            foreach(var a in obj.EarlyDesignations)
-            {
-                Console.WriteLine(a);
-                Console.ReadLine();
-            }
+            //foreach(var a in obj.EarlyDesignations)
+            //{
+            //    Console.WriteLine(a);
+            //    Console.ReadLine();
+            //}
+
+            IServerbale obj = new Explicit_Interface();
+            var a = (Explicit_Interface)obj;
+            a.Save();
+            
+           
         }
     }
 }
